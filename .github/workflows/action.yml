@@ -3,6 +3,7 @@ on:
   workflow_call:
 jobs:
   clang-format:
+    timeout-minutes: 45
     name: Clang-Format
     runs-on: [self-hosted, docker, builder]
     container:
