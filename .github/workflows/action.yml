@@ -13,6 +13,6 @@ jobs:
         - /home/buildbot/.ssh/root/.ssh
     steps:
       - name: Checkout source code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Run Clang-format
         run: find ./ -iname *.hpp -o -iname *.cpp -o -iname *.c -o -iname *.h | xargs clang-format --dry-run --Werror
